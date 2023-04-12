@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+/* HEADER -------------------- */
+
+
+/* RESPONSIVE -------------------- */
+
+
+
+
+/* NAV -------------------- */
+
+
+/* RESPONSIVE -------------------- */
+
+
+
+/* CAROUSEL -------------------- */
+.carousel{
+    background-color: #ccc;
+    height: 2000px;
+}
+
+
+
+
+/* BACKTOTOP -------------------- */
+.backtoTop {
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+
+    text-align: center;
+    background: #0d369f;
+    border-radius: 5px;
+
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.backtoTop:hover {
+    color: white;
+    opacity: 0.8;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
