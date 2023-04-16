@@ -1,6 +1,8 @@
 /* SERVICES -------------------- */
 .services{
     background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-position: bottom right;
     padding: 48px 0;
 }
 .services .section-services{
@@ -40,6 +42,7 @@
     line-height: 28px;
     color: #707070;
     letter-spacing: .4px;
+    font-weight: 400;
 }
 
 
