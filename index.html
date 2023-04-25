@@ -69,19 +69,19 @@
         </div>
     </header>
     <!-- NAV -------------------- -->
-    <div class="header-main">
-        <div class="header-fix container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-                <div class="nav-logo">
-                    <a class="navbar-brand d-flex p-0" href="#">
-                        <img class="mr-1" src="./img/logo.png" alt="logo">
-                        Studious</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
+    <div class="header-main" id="headerFix">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                <!-- <div class="nav-logo"> -->
+                <a class="navbar-brand d-flex p-0 mr-0" href="#">
+                    <img class="mr-1" src="./img/logo.png" alt="logo">
+                    Studious</a>
+                <button id="btn-icon" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span id="icon-expand" class="fa icon-expand fa-bars"></span>
+                    <span id="icon-close" class="fa icon-close fa-times"></span>
+                </button>
+                <!-- </div> -->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
@@ -110,11 +110,13 @@
                             <a class="nav-link" href="#">CONTACT</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Enter Keyword">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                            <i class="fa fa-search"></i>
-                        </button>
+                    <form class="form-inline ml-lg-3 my-0">
+                        <div class="btn-search">
+                            <input class="form-control" type="search" placeholder="Enter Keyword">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
                 <div class="nav-theme">
@@ -131,54 +133,56 @@
     <section class="carousel">
         <div class="owl-carousel owl-theme">
             <div class="studio-item">
-                <div class="viewbanner banner1">
-                </div>
-                <div class="contentBanner">
-                    <h2 class="mb-0">Studious is the best choice for everyone</h2>
-                    <a class="btn mt-5" href="#">
-                        Know More
-                        <i class="fa fa-arrow-right ml-2"></i>
-                    </a>
+                <div class="viewbanner d-flex banner1">
+                    <div class="contentBanner container">
+                        <h2 class="mb-0">Studious is the best choice for everyone</h2>
+                        <a class="btn mt-4 mt-sm-5" href="#">
+                            Know More
+                            <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="studio-item">
-                <div class="viewbanner banner2">
-                </div>
-                <div class="contentBanner">
-                    <h2 class="mb-0">Master the Skills to Drive your Career</h2>
-                    <a class="btn mt-5" href="#">
-                        Know More
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                <div class="viewbanner d-flex banner2">
+                    <div class="contentBanner container">
+                        <h2 class="mb-0">Master the Skills to Drive your Career</h2>
+                        <a class="btn mt-4 mt-sm-5" href="#">
+                            Know More
+                            <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+
 
         </div>
 
     </section>
-    <!-- SERVICES -->
-    <section class="services">
-        <div class="services-list container">
+    <!-- COURSE -->
+    <section class="course pb-5">
+        <div class="course-list container">
             <div class="row">
-                <div class="col-3">
-                    <div class="content-box">
+                <div class="col-md-6 col-lg-3 px-lg-2">
+                    <div class="content-box box1">
                         <i class="fa fa-cogs" aria-hidden="true"></i>
                         <h3>Engineering & Architecture</h3>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="content-box">
+                <div class="col-md-6 col-lg-3 px-lg-2 mt-3 mt-md-0">
+                    <div class="content-box box2">
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <h3>Learning Management</h3>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="content-box">
+                <div class="col-md-6 col-lg-3 px-lg-2 mt-3 mt-lg-0">
+                    <div class="content-box box3">
                         <i class="fa fa-coffee" aria-hidden="true"></i>
                         <h3>Business & Management</h3>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="content-box">
+                <div class="col-md-6 col-lg-3 px-lg-2 mt-3 mt-lg-0">
+                    <div class="content-box box4">
                         <i class="fa fa-hourglass-half" aria-hidden="true"></i>
                         <h3>Artificial Intelligence</h3>
                     </div>
@@ -303,6 +307,32 @@
     <!-- BACK TO TOP -->
     <script src="./js/mainBackToTop.js"></script>
     <script src="./js/utilBacktoTop.js"></script>
+
+    <!-- SCROLL HEADER -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("headerFix").classList.add("header-fix");
+                document.getElementById("navbar").style.padding = "0.5rem 1rem";
+            } else {
+                document.getElementById("headerFix").className = "header-main";
+            }
+        }
+    </script>
+
+    <!-- SHOW/HIDE ICON TOGGLE -->
+    <script>
+
+        function showAndHide() {
+            var iconExpand = document.getElementById("icon-expand");
+            iconExpand.classList.toggle("hide");
+            var iconClose = document.getElementById("icon-close");
+            iconClose.classList.toggle("show");
+
+        }
+        document.getElementById("btn-icon").onclick = showAndHide;
+    </script>
 </body>
 
 </html>
