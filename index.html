@@ -13,10 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- FONT AWESOME -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- FONT Line Awesome -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
+        <!-- FONT Line Awesome -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- OWL CAROUSEL -->
@@ -33,7 +36,7 @@
 
 </head>
 
-<body>
+<body id="addBody">
     <!-- HEADER -------------------- -->
     <header>
         <div class="header-contact container-fluid d-flex justify-content-between">
@@ -120,9 +123,9 @@
                     </form>
                 </div>
                 <div class="nav-theme">
-                    <div class="theme-switch">
+                    <div class="theme-switch" id="switch">
                         <i class="lar la-sun"></i>
-                        <i class="fa-regular fa-moon"></i>
+                        <i class="far fa-moon"></i>
                     </div>
                 </div>
             </nav>
@@ -293,6 +296,9 @@
     <script>$('.owl-carousel').owlCarousel({
             loop: true,
             responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
             responsive: {
                 0: {
                     items: 1,
@@ -314,7 +320,6 @@
         function scrollFunction() {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 document.getElementById("headerFix").classList.add("header-fix");
-                document.getElementById("navbar").style.padding = "0.5rem 1rem";
             } else {
                 document.getElementById("headerFix").className = "header-main";
             }
@@ -323,15 +328,21 @@
 
     <!-- SHOW/HIDE ICON TOGGLE -->
     <script>
-
         function showAndHide() {
             var iconExpand = document.getElementById("icon-expand");
             iconExpand.classList.toggle("hide");
             var iconClose = document.getElementById("icon-close");
             iconClose.classList.toggle("show");
-
         }
         document.getElementById("btn-icon").onclick = showAndHide;
+    </script>
+
+    <!-- SWITCH THEME -->
+    <script>
+        function switchTheme() {
+            document.getElementById("addBody").classList.toggle("dark");
+        }
+        document.getElementById("switch").onclick = switchTheme;
     </script>
 </body>
 
