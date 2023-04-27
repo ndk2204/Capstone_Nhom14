@@ -54,7 +54,123 @@
 
 
 /* CONTACT -------------------- */
+.contact{
+    padding: 80px 0;
+    background: #060e1f;
+    position: relative;
+}
+.contact .contact-sub{
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100px;
+    box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
+}
+.contact .contact-subtx1 h4{
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.contact .contact-subtx1 p{
+    font-size: 15px;
+    color: #908d83;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
 
+.contact .contact-subtx2 .contact-subf input{
+    width: 80%;
+}
+
+.contact .contact-subtx2 .contact-subf button{
+    width: 20%;
+    height: 100%;
+    background-color: #0d369f;
+    color: white;
+}
+
+.contact .contact-sub .contact-subf{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .contact-content{
+    margin-top: 120px ;
+}
+.contact .contact-content h6{
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(23, 54, 88, 0.4);
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact .contact-content ul li a{
+    position: relative;
+    transition: all 0.3s;
+}
+.contact .contact-content ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.contact span,p,a{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #cecece;
+    margin: 0 0 10px 0;
+}
+
+.contact .contact-item li{
+    display: inline-block;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.contact .contact-item li a{
+    padding: 0;
+    display: block;
+    font-size: 1rem;
+    color: #fff;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    background: rgba(255, 255, 255, 0.06);
+    text-align: center;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.3s all;
+}
+
+.contact .contact-item li a:hover{
+    opacity: 0.7;
+}
+
+.contact .contact-prof p a{
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.contact .contact-prof p a:hover{
+    color: white;
+}
+
+.contact .contact-prof p i{
+    padding-right: 10px;
+}
+
+
+.contact .contact-about{
+    border-left: 1px solid rgb(64 73 82 / 51%);
+}
 
 
 /* RESPONSIVE -------------------- */
@@ -65,9 +181,18 @@
 
 
 /* FOOTER -------------------- */
+footer .footer-content{
+    background: #040a17;
+    padding: 20px 0;
+}
 
+footer .footer-copy{
+    margin: 0;
+}
 
-
+footer .footer-copy a:hover{
+    color: white;
+}
 
 
 
