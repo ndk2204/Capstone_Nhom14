@@ -54,6 +54,45 @@
 
 
 /* CONTACT -------------------- */
+.contactup .container{
+    padding-bottom: 150px;
+    margin-bottom: 48px;
+}
+
+.contactup .contactup-right h3{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.contactup .contactup-right p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--font-color);
+    letter-spacing: .4px;
+}
+
+.contactup .contactup-right button{
+    background: #ff6e65;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 14px 30px;
+    transition: 0.5s all;
+}
+
+.contactup .contactup-right button:hover{
+    background-color: #0d369f;
+}
+
+.contactup .contactup-right a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
 .contact{
     padding: 80px 0;
     background: #060e1f;
