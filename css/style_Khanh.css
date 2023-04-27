@@ -412,12 +412,7 @@ header {
 
 /* NAV SCROLL-------------------- */
 
-/* SWITCH THEME -------------------- */
-
-.dark .studio,
-.dark .number,
-.dark .feedback,
-.dark .instructors,
+/* SWITCH THEME KHANH-------------------- */
 
 .dark .navbar-collapse .form-inline,
 .dark .navbar-collapse .navbar-nav,
@@ -461,7 +456,34 @@ header {
 .dark .navbar-collapse .dropdown-menu::before {
     background-color: var(--dark-color);
     border: 1px solid rgb(255 255 255 / 20%);
+}
+.dark .backtoTop{
+    background-color: #4867b0;
+}
 
+/* THEME VUONG-------------------- */
+.dark 
+.dark .contact .contact-sub,
+.dark .services .service-project{
+    background-color: var(--dark-color);
+}
+.dark .services .service-project .icon i{
+    color: #4867b0;
+}
+.dark .contact .contact-subtx1 h4,
+.dark .services .service-title h5{
+    color: white;
+}
+
+.dark .contact .contact-subtx1 p,
+.dark .services .service-title p{
+    color: #b7b7b7;
+}
+.dark .contact .contact-subtx2 .contact-subf button{
+    background-color: #4867b0;
+}
+.dark .contact .contact-subtx2 .contact-subf input{
+    border: 1px solid transparent;
 }
 
 /* SWITCH THEME -------------------- */
