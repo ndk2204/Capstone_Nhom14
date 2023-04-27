@@ -10,12 +10,15 @@
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- FONT AWESOME -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
     <!-- FONT Line Awesome -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -33,58 +36,158 @@
 
 </head>
 
-<body>
+<body id="addBody">
     <!-- HEADER -------------------- -->
     <header>
-
-
-
+        <div class="header-contact container-fluid d-flex justify-content-between">
+            <div class="header-left">
+                <ul class="m-0">
+                    <li>
+                        <a href="#">Have any question ?</a>
+                    </li>
+                    <li class="iconphone">
+                        <i class="fa fa-phone"></i>
+                        <a href="#">+1(21) 234 4567</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="#">mail@example.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <a href="https://www.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://twitter.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="mr-0" href="https://www.linkedin.com/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
     </header>
     <!-- NAV -------------------- -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="header-main" id="headerFix">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                <a class="navbar-brand d-flex p-0 mr-0" href="#">
+                    <img class="mr-1" src="./img/logo.png" alt="logo">
+                    Studious</a>
+                <button id="btn-icon" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span id="icon-expand" class="fa icon-expand fa-bars"></span>
+                    <span id="icon-close" class="fa icon-close fa-times"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        PAGES
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                PAGES
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">BLOG POSTS</a>
+                                <a class="dropdown-item" href="#">404 PAGE</a>
+                                <a class="dropdown-item" href="#">LANDING PAGE</a>
+                                <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-lg-3 my-0">
+                        <div class="btn-search">
+                            <input class="form-control" type="search" placeholder="Enter Keyword">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="nav-theme">
+                    <div class="theme-switch" id="switch">
+                        <i class="lar la-sun"></i>
+                        <i class="far fa-moon"></i>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">CONTACT</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Enter Keyword" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+                </div>
+            </nav>
         </div>
-    </nav>
-
-
-
+    </div>
 
     <!-- CAROUSEL -------------------- -->
     <section class="carousel">
+        <div class="owl-carousel owl-theme">
+            <div class="studio-item">
+                <div class="viewbanner d-flex banner1">
+                    <div class="contentBanner container">
+                        <h2 class="mb-0">Studious is the best choice for everyone</h2>
+                        <a class="btn mt-4 mt-sm-5" href="#">
+                            Know More
+                            <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="studio-item">
+                <div class="viewbanner d-flex banner2">
+                    <div class="contentBanner container">
+                        <h2 class="mb-0">Master the Skills to Drive your Career</h2>
+                        <a class="btn mt-4 mt-sm-5" href="#">
+                            Know More
+                            <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
+
+        </div>
+
+    </section>
+    <!-- COURSE -->
+    <section class="course pb-5">
+        <div class="course-list container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 px-lg-2">
+                    <div class="content-box box1">
+                        <i class="fa fa-cogs" aria-hidden="true"></i>
+                        <h3>Engineering & Architecture</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 px-lg-2 mt-3 mt-md-0">
+                    <div class="content-box box2">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <h3>Learning Management</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 px-lg-2 mt-3 mt-lg-0">
+                    <div class="content-box box3">
+                        <i class="fa fa-coffee" aria-hidden="true"></i>
+                        <h3>Business & Management</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 px-lg-2 mt-3 mt-lg-0">
+                    <div class="content-box box4">
+                        <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                        <h3>Artificial Intelligence</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -360,27 +463,59 @@
     </script>
 
     <!-- OWL CAROUSEL -->
-    <script src="./js/jquerycarousel.min.js"></script>
+    <!-- <script src="./js/jquerycarousel.min.js"></script> -->
     <script src="./js/owl.carousel.min.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
+    <script>$('.owl-carousel').owlCarousel({
             loop: true,
-            margin: 30,
-            nav: true,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
                 },
                 1000: {
-                    items: 3
+                    items: 1,
                 }
             }
-        });
+        })
     </script>
 
     <!-- BACK TO TOP -->
     <script src="./js/mainBackToTop.js"></script>
     <script src="./js/utilBacktoTop.js"></script>
+
+    <!-- SCROLL HEADER -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("headerFix").classList.add("header-fix");
+            } else {
+                document.getElementById("headerFix").className = "header-main";
+            }
+        }
+    </script>
+
+    <!-- SHOW/HIDE ICON TOGGLE -->
+    <script>
+        function showAndHide() {
+            var iconExpand = document.getElementById("icon-expand");
+            iconExpand.classList.toggle("hide");
+            var iconClose = document.getElementById("icon-close");
+            iconClose.classList.toggle("show");
+        }
+        document.getElementById("btn-icon").onclick = showAndHide;
+    </script>
+
+    <!-- SWITCH THEME -->
+    <script>
+        function switchTheme() {
+            document.getElementById("addBody").classList.toggle("dark");
+        }
+        document.getElementById("switch").onclick = switchTheme;
+    </script>
 </body>
 
 </html>
