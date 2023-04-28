@@ -7,6 +7,19 @@
 
 
 /* NUMBER -------------------- */
+.number .row .counter{
+    font-size: 46px;
+}
+.number .row .content{
+    color: #060606;
+    line-height: 28px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+.number .row .col-number{
+    border-right: 1px solid #eee;
+}
+
 
 /* RESPONSIVE -------------------- */
 
