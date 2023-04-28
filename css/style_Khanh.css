@@ -487,6 +487,14 @@ header {
 .dark .contact .contact-subtx2 .contact-subf input{
     border: 1px solid transparent;
 }
+/* THEME VUONG-------------------- */
+
+.dark .number{
+    background-color: var(--dark-color);
+}
+.dark .number .col-number p{
+    color: white;
+}
 
 /* SWITCH THEME -------------------- */
 
