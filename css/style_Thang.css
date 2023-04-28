@@ -1,4 +1,67 @@
 /* WELCOME -------------------- */
+.feedback .heading h2,
+.welcome .heading h2{
+    font-size: 40px;
+    color: ;
+    font-weight:600;
+    letter-spacing: 0.5px ;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    box-sizing: inherit;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome .heading>p::before{
+    content: '' ;
+    width: 60px;
+    height: 2px;
+    background-color: #707070;
+    display: block;
+    margin: auto;
+    left: -20px ;
+    bottom: -8px;
+    position: relative;
+}
+
+.welcome .heading>p::after{
+    content: '' ;
+    width: 60px;
+    height: 2px;
+    background-color: #707070;
+    display: block;
+    margin: 2px auto;
+    left: 20px;
+    bottom: -15px;
+    box-sizing: border-box;
+    position: relative;
+}
+.welcome__item{
+    text-align: center;
+    padding: 50px;
+}
+
+.welcome__item i{
+    font-size: 30px ;
+    color: #0d369f ;
+    background-color: #0d369f17 ;
+    border-bottom: 50%;
+
+}
+
+.welcome .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.welcome .Studious{
+    color: #ff6e65;
+}
 
 
 /* RESPONSIVE -------------------- */
@@ -7,6 +70,19 @@
 
 
 /* NUMBER -------------------- */
+.number .row .counter{
+    font-size: 46px;
+}
+.number .row .content{
+    color: #060606;
+    line-height: 28px;
+    letter-spacing: .4px;
+    font-weight: 400;
+}
+.number .row .col-number{
+    border-right: 1px solid #eee;
+}
+
 
 /* RESPONSIVE -------------------- */
 
@@ -16,6 +92,68 @@
 
 /* FEEDBACK -------------------- */
 
+.feedback{
+    display: flex;
+    padding: 150px;
+}
+
+.feedback .cards{
+    align-items: stretch;
+    
+}
+
+.feedback .card__user{
+    display: flex;
+    align-items:center;
+}
+
+.feedback .card__avatar{
+    width: 60px ;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 100rem ;
+    flex-shrink: 0;
+}
+
+.feedback .card__info{
+    padding-left: 0px;
+    flex: 1;
+}
+.feedback .card__user__top{
+    margin-bottom: -60px;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 30px
+
+}
+
+.feedback .card__user__name{
+    font-weight: 500 ;
+    line-height: 1;
+    color: #999;
+    padding: 30px;
+    margin-top: -15px;
+}
+.feedback .card{
+    color: #999;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px ;
+    margin-left: 30px ;
+    padding: 40px;
+}
+
+.feedback .card i{
+    height: 30px;
+    width: 100%;
+    object-fit: cover;
+    padding: -30px;
+
+
+}
 
 
 
@@ -23,3 +161,42 @@
 
 /* INSTRUCTORS -------------------- */
 
+
+
+.instructors{
+    display: flex;
+    text-align: center;
+    padding: 150px;
+    
+}
+.instructors .cardis{
+    width: 25%;
+    padding: 20px;
+    
+}
+
+.instructors .cardi{
+    margin-bottom: -20px;
+    margin: -5px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white ;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px ;
+    padding: 10px
+    
+    
+
+}
+
+
+.instructors .cardi__user__top{
+    font-weight:bold;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: -20px;
+    line-height: 2;
+    color: black;
+}
+.instructors .cardi{
+    color: #999;
+}
