@@ -462,7 +462,8 @@ header {
 }
 
 /* THEME VUONG-------------------- */
-.dark 
+.dark .contactup,
+.dark .contact .contact-sub .form-control,
 .dark .contact .contact-sub,
 .dark .services .service-project{
     background-color: var(--dark-color);
@@ -470,11 +471,12 @@ header {
 .dark .services .service-project .icon i{
     color: #4867b0;
 }
+.dark .contactup .contactup-right h3,
 .dark .contact .contact-subtx1 h4,
 .dark .services .service-title h5{
     color: white;
 }
-
+.dark .contactup .contactup-right p,
 .dark .contact .contact-subtx1 p,
 .dark .services .service-title p{
     color: #b7b7b7;
