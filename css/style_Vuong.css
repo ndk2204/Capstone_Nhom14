@@ -107,7 +107,6 @@
     background: white;
     position: absolute;
     left: 0;
-    right: 0;
     top: -100px;
     box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
 }
@@ -150,6 +149,10 @@
     border-bottom: 1px solid rgba(23, 54, 88, 0.4);
     padding-bottom: 10px;
     font-weight: bold;
+}
+
+.contact .contact-content li{
+    padding: 0 0 10px 14px;
 }
 
 .contact .contact-content ul li a{
@@ -214,8 +217,30 @@
 
 
 /* RESPONSIVE -------------------- */
+@media screen and (max-width:992px) {
+    .contact .contact-about{
+        border-left: none;
+    }
+    .contact .contact-sub{
+        margin: 0 2em;
+    }
+    .contact .contact-content li{
+        padding: 0;
+        font-size: 10px;
+    }
+}
 
+@media screen and (max-width:768px) {
+    .contact .contact-content li{
+    margin: 0;
+    }
+}
 
+@media screen and (max-width:576px) {
+    .contact .contact-content{
+        margin-top: 200px ;
+    }    
+}
 
 
 
@@ -228,11 +253,17 @@ footer .footer-content{
 
 footer .footer-copy{
     margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: #a0a0a0;
+    font-weight: 300;
+}
+
+footer .footer-copy a{
+    color: white;
+    text-decoration: none;
 }
 
 footer .footer-copy a:hover{
     color: white;
 }
-
-
-
